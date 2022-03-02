@@ -74,7 +74,7 @@ Cet outil, basé sur le framework Spring, permet de développer des applications
 
 ## Qu’est ce qu’une annotation ? 
 
-Ce sont les métadonnées dans le code source visant à modifier l'exécution d'un programme. (@Override, @Ressource, etc...)
+Ce sont les métadonnées dans le code source visant à modifier l'exécution d'un programme. (@Override, @Ressource, etc.).
 
 ## Quels apports présentent les Annotations ?
 
@@ -115,7 +115,7 @@ Utiliser ce pattern, tout d'abord, est reconnu comme bonne pratique en réponse 
 Un singleton est un patron de conception (design pattern) dont l'objectif est de restreindre l'instanciation d'une classe à un seul objet (ou bien à quelques objets seulement). Il est utilisé lorsqu'on a besoin exactement d'un objet pour coordonner des opérations dans un système. 
 
 ## Que permet de réaliser les Entity dans SpringBoot ? 
-Les Entity dans SpringBoot agisse pour une connexion à la base de données en indiquant, via l'annotation @Entity, une classe persistante. Le service JPA va ainsi créer une table correspondante à cette classe
+Les Entity dans SpringBoot agisse pour une connexion à la base de données en indiquant, via l'annotation @Entity, une classe persistante. Le service JPA va ainsi créer une table correspondante à cette classe.
 
 ## Est-ce spécifique à SpringBoot ?
 Non, nous pouvons en trouver également avec Symfony par exemple.
@@ -130,7 +130,7 @@ Le CRUD Repository de Springboot contenant des méthodes permettant de réaliser
 Les CRUD (create - read - update - delete) représentent les quatre fonctions de base du stockage persistant. CRUD fait généralement référence aux opérations effectuées dans une base de données ou un magasin de données, mais peut également s'appliquer aux fonctions de niveau supérieur d'une application.
 
 ## Qui réalise l’implémentation de la méthode findBy Property lors de la création d’un repository en Spring Boot ?
-C'est le service qui réalise l'implémentation de la méthode findBy Property lors de la création d'un repository en Springboot
+C'est le service qui réalise l'implémentation de la méthode findBy Property lors de la création d'un repository en Springboot.
 
 ## Comment gère-t-on les relations One To One, One to Many et Many to Many avec JPA ?
  - One-To-One : sans table d'association (il nous faut utiliser le couple d'annotation JPA @OneToOne et @JoinColumn), avec attribut inverse ou avec table d'association (il faut encore utiliser l'annotation @OneToOne mais il va falloir la coupler à une annotation @JoinTable afin d'y spécifier les informations utiles à la jointure).
@@ -153,9 +153,9 @@ D'autres architectures existent :
 ## Quels sont leurs avantages/inconvénients ?
 | Tableau comparatif    |          Avantages          |         Inconvénients         |
 | :---------- | :--------------------------: | :----------------------: |
-| architectures en appel et retour |  |   |
-| architectures en couche     |                |           |
-| architectures centrées sur les données      |                |         |
-| architectures en flots de données    |               |          |
-| architectures orientées objets     |                |           |
-| architectures orientées agents      |               |           |
+| Architectures en appel et retour |  |   |
+| Architectures en couche     |                |           |
+| Architectures centrées sur les données      |   Grande intégrabilité             |   Peu extensible    |
+| Architectures en flots de données    |               |          |
+| Architectures orientées objets     |                |           |
+| Architectures orientées agents      |               |           |
