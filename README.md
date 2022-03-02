@@ -89,9 +89,9 @@ D'autres architectures existent :
 ## Quels sont leurs avantages/inconvénients ?
 | Tableau comparatif    |          Avantages          |         Inconvénients         |
 | :---------- | :--------------------------: | :----------------------: |
-| architectures en appel et retour | 192.167.17.1 |   |
-| architectures en couche     |        192.168.17.17         |           |
-| architectures centrées sur les données      |        192.168.17.18         |      172.16.0.1     |
-| architectures en flots de données    |        192.168.17.19         |      172.16.0.2     |
-| architectures orientées objets     |        192.168.17.20         |      172.16.0.3     |
-| architectures orientées agents      |        192.168.17.21         |           |
+| architectures en appel et retour |  |   |
+| architectures en couche     |                |           |
+| architectures centrées sur les données      |                |         |
+| architectures en flots de données    |               |          |
+| architectures orientées objets     |                |           |
+| architectures orientées agents      |               |           |
