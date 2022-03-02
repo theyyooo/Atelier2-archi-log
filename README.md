@@ -2,15 +2,39 @@
 
 ## Qu’est ce que des Services Web Full Rest ? 
 
+REST est une méthode d'architecture logicielle ayant pour but de créer des services WEB en respectant certaines contraintes.
+
 ## Quelles sont les contraintes imposées par ce type de service ?
+
+Les contraintes sont les suivantes :
+- client-serveur : Les applications du client et du serveur doivent être indépendantes l'une de l'autre.
+- Uniformisation de l'interface : Chacune des ressources est identifiées par une URI.
+- Mise en cache : Elle améliore l'accessibilité à une application par un client. 
+- Sans état : Les requêtes ne seront pas stocker par le serveur.  
+- En couche :
 
 ## Qu’est ce qu’un gestionnaire de dépendance ? 
 
+Un gestionnaire de dépendance permet d'administrer les dépendances. 
+
 ## Maven est-il le seul ? 
+
+Non. Il existe par exemple "Composer" pour Php.
 
 ## Quel est l’avantage d’utiliser un gestionnaire de dépendances ? 
 
+Il est très utile pour mettre à jour les dépendances et revenir à une version antérieure en cas de problème.
+
 ## Quelles sont les grandes étapes de fonctionnement de Maven ?
+
+Les étapes sont les suivantes :
+- "Validation" : vérification des informations du projet
+- "Compilation" : le code du projet est compilé
+- "Tester" : le code compilé est testé par des tests unitaires
+- "Paquet" : le code est rassemblé dans un format de distribution (jar, war, etc...)
+- "Vérification" : Vérifie l'intégration du projet en faisant ddes tests d'intégration.
+- "Installation" : Installe le paquet qui sera utilisé en tant que dépendance.
+- "Déploiement" : Partage le paquet final sur un repertoire distant de manière à qu'il soit accessible par d'autres personnes.
 
 ## Qu’est ce qu’une application classique Entreprise Java Application ? 
 
@@ -18,15 +42,55 @@
 
 ## Qu’est ce que Spring ? qu’apporte Spring boot vis-à-vis de Spring ?
 
-## Qu’est ce que Spring Boot ? 
+Spring est un framework open-source permettant de construire l'infrastructure d'une application JAVA. Springboot est basé sur Spring.
+
+| Spring | SpringBoot  |
+|---|---|
+| Framework Java EE utilisé pour des applications | Framework principalement utilisé pour développer des API REST |
+| Basé sur l'injection de dépendance | Basé sur des "starters" (gestionnaire de dépendance) |
+| Personnalisable | Epuration de la configuration |
+| Pas de serveur embarqué | Serveur embarqué (Apache Tomcat) |
+
+## Qu’est ce que Spring Boot ?
+
+Cet outil, basé sur le framework Spring, permet de développer des applications WEB et des microservices rapidement.Il a la particularité de créer des applications autonomes.
 
 ## Quels sont les points communs/différences entre JEE et Spring Boot ?
 
+| JEE |
+| Avantages | Inconvénients  |
+|---|---|
+| Disponible sur plusieurs plateformes | Pas de service support intégré pour les services WEB |
+| Facile à prendre en main si J2SE est connu | Coûte plus cher à développer |
+| Extensif et sécurisé | Plus complexe |
+
+| Springboot |
+| Avantages | Inconvénients |
+|---|---|
+| Sécurisé | Temps d'exécution important |
+| Solution stable qui a fait ses preuves | Moins de contrôle |
+| Permet un "TimeToMarket" plus court | N'est pas conseillé pour un projet à grande échelle |
+
+
 ## Qu’est ce qu’une annotation ? 
+
+Ce sont les métadonnées dans le code source visant à modifier l'exécution d'un programme. (@Override, @Ressource, etc...)
 
 ## Quels apports présentent les Annotations ?
 
+Elles proposent des fonctionnalités en plus. Par exemple, @Ressource va permettre de récupérer un objet de configuration.
+
 ## Comment fait-on pour créer un Web Service Rest avec Spring Boot ?
+
+On va sur le site de Springboot pour charger l'architecture du projet selon nos paramètres : 
+
+- Project : Maven Project
+- Language : Java
+- Springboot : 2.6.4
+- Project Metadata
+- Dependencies : Spring Web
+
+On peut ensuite importer notre projet dans Eclipse.
 
 ## Qu’est ce qu’un container de Servlet ? 
 Un container de Servlet est un logiciel qui exécute des Servlet (Tomcat est le plus populaire).
