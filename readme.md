@@ -1,4 +1,30 @@
-# Atelier2-archi-log
+# Atelier 2 - Architecture logiciel
+
+## Installer et démarer le front
+
+- Clonner le front
+`git clone etc`
+
+- Lancer le front
+`cd etc`
+`php -S 127.0.0.1:8081`
+
+ouvrir `http://127.0.0.1:8081/` dans le navigateur
+
+## Installer et démarer l'api Spring boot
+
+- Clonner le front
+`git clone etc`
+
+- Compiler le code sur eclipse
+
+`launch`
+
+Remplir la base de données en  appelant la route instance
+`http://localhost:8080/instance`
+
+
+# Questions
 
 ## Qu’est ce que des Services Web Full Rest ? 
 
@@ -38,7 +64,15 @@ Les étapes sont les suivantes :
 
 ## Qu’est ce qu’une application classique Entreprise Java Application ? 
 
+- Il s'agit d'une application développé sur la plateforme Java d'oracle, incluant la gestions de services web et d'architectures distribuées.
+
 ## Donner un exemple d’usage avec web service, JSP, JavaBean, EJB et JMS.
+
+JSP: Rendu html server. Pour des application qui n'ecessite un affichage des données directement après traitement du server.
+
+JavaBean: Compsoan réutilisable pour les applciation avec une interface gourmande
+
+JMS: permet l'envoie de message de façon asynchrone. Utile dans le cas d'applciation deux tiers incluant une api et un front distant.
 
 ## Qu’est ce que Spring ? qu’apporte Spring boot vis-à-vis de Spring ?
 
@@ -96,7 +130,7 @@ On peut ensuite importer notre projet dans Eclipse.
 Un container de Servlet est un logiciel qui exécute des Servlet (Tomcat est le plus populaire).
 
 ## Comment fonctionne un containeur de Servlet ?
-Un container de Servlet 
+Un container de Servlet est un logiciel qui exécute des moteur web.
 
 ## Expliquer la philosophie « Convention over Configuration » de Spring boot ?
 Il s'agit d'une philosiphie qui tend à faire diminuer le nombre de décisions qu'un développeur doit prendre : il doit se concentrer sur les aspects non conventionnels de l'application. Cela permet de réduire le nombre de fichiers de configuration et de configurer par défaut les applications en se basant sur les standards du milieu.
@@ -153,9 +187,9 @@ D'autres architectures existent :
 ## Quels sont leurs avantages/inconvénients ?
 | Tableau comparatif    |          Avantages          |         Inconvénients         |
 | :---------- | :--------------------------: | :----------------------: |
-| Architectures en appel et retour |  |   |
-| Architectures en couche     |                |           |
+| Architectures en appel et retour | encapsulation  | reseau, maj  |
+| Architectures en couche     |    simplicité d'implementation            |    Model de données visible       |
 | Architectures centrées sur les données      |   Grande intégrabilité             |   Peu extensible    |
-| Architectures en flots de données    |               |          |
-| Architectures orientées objets     |                |           |
-| Architectures orientées agents      |               |           |
+| Architectures en flots de données    |  chainage             |          |
+| Architectures orientées objets     |      réutilisabilité, éfficacité          |   compliqué        |
+| Architectures orientées agents      |               |  nécéssite une formalisation rigoureuse         |
